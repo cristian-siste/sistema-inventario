@@ -1,0 +1,172 @@
+
+/* =========================================
+   SIDEBAR - SISTEMA DE INVENTARIO
+   Menú lateral fijo y profesional
+   ========================================= */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 220px;
+    min-width: 220px;
+    height: 100vh;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px 16px;
+
+    background: #ffffff;
+    color: #334155;
+    border-right: 1px solid #e2e8f0;
+
+    z-index: 100;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    flex-shrink: 0;
+}
+
+/* Logo y nombre del sistema */
+.sidebar .logo {
+    margin: 0 0 28px;
+    padding: 0 8px;
+    flex-shrink: 0;
+}
+
+.sidebar .logo h2 {
+    margin: 0 0 6px;
+    color: #1e293b;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.sidebar .logo span {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Lista de opciones del menú */
+.sidebar .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    min-width: 0;
+}
+
+/* Enlaces de navegación */
+.sidebar .menu a,
+.sidebar .logout a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+
+    padding: 12px 10px;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    text-decoration: none;
+    color: #475569;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+/* Efecto al pasar el cursor */
+.sidebar .menu a:hover,
+.sidebar .logout a:hover {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Opción seleccionada */
+.sidebar .menu a.active {
+    background: #eaf2ff;
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+/* Iconos del menú */
+.sidebar .menu a span,
+.sidebar .logout a span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    min-width: 22px;
+    flex-shrink: 0;
+}
+
+/* Cerrar sesión */
+.sidebar .logout {
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 0;
+
+    border-top: 1px solid #e2e8f0;
+    flex-shrink: 0;
+}
+
+/* Accesibilidad por teclado */
+.sidebar .menu a:focus-visible,
+.sidebar .logout a:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 700px) {
+    .sidebar {
+        width: 190px;
+        min-width: 190px;
+        padding: 18px 10px;
+    }
+
+    .sidebar .logo {
+        padding: 0 6px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar .logo h2 {
+        font-size: 18px;
+    }
+
+    .sidebar .menu a,
+    .sidebar .logout a {
+        padding: 10px 8px;
+        gap: 8px;
+        font-size: 13px;
+    }
+}
+
+/* Respetar la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    .sidebar .menu a,
+    .sidebar .logout a {
+        transition: none;
+    }
+}

@@ -1,0 +1,198 @@
+/* =======================================
+   LOGIN - SISTEMA DE GESTIÓN DE INVENTARIO
+======================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+
+}
+
+.login-container{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.login-card{
+
+    width:100%;
+
+    max-width:480px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.login-logo{
+
+    text-align:center;
+
+    font-size:75px;
+
+    margin-bottom:25px;
+
+}
+
+.login-card h1{
+
+    text-align:center;
+
+    color:#1e3a8a;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    line-height:1.4;
+
+    margin-bottom:18px;
+
+}
+
+.login-card p{
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:1.6;
+
+    margin-bottom:35px;
+
+}
+
+.login-card label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+.login-card input{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:22px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.login-card input:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 8px rgba(37,99,235,.30);
+
+}
+
+.login-card button{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-card button:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+.footer-login{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#888;
+
+    font-size:14px;
+
+}
+
+@media(max-width:600px){
+
+    .login-card{
+
+        padding:30px;
+
+    }
+
+    .login-card h1{
+
+        font-size:26px;
+
+    }
+
+    .login-logo{
+
+        font-size:60px;
+
+    }
+
+}

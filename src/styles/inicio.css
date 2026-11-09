@@ -1,0 +1,168 @@
+.pantalla-inicio{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#e2e8f0;
+
+}
+
+
+
+.panel-inicio{
+
+    width:380px;
+
+    min-height:650px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+
+}
+
+
+
+.icono-inventario{
+
+    font-size:80px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.panel-inicio h1{
+
+    font-size:32px;
+
+    color:#1e293b;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.panel-inicio p{
+
+    color:#64748b;
+
+    font-size:17px;
+
+    line-height:1.6;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.acciones{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+.acciones a{
+
+    width:100%;
+
+    text-decoration:none;
+
+}
+
+
+
+.boton-azul,
+.boton-verde{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+}
+
+
+
+.boton-azul{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+.boton-verde{
+
+    background:#16a34a;
+
+    color:white;
+
+}
+
+
+
+.boton-azul:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+.boton-verde:hover{
+
+    background:#15803d;
+
+}
+
+
+
+.panel-inicio footer{
+
+    margin-top:40px;
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}

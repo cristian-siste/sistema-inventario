@@ -1,0 +1,423 @@
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#f1f5f9;
+    color:#1e293b;
+
+}
+
+
+
+/* ========================= */
+/* MENU LATERAL */
+/* ========================= */
+
+
+.sidebar{
+
+    width:260px;
+    height:100vh;
+
+    background:white;
+
+    color:#333;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    padding:25px 15px;
+
+    border-right:1px solid #ddd;
+
+    box-shadow:2px 0 10px rgba(0,0,0,0.08);
+
+}
+
+
+
+.sidebar h2{
+
+    text-align:center;
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+    color:#1e293b;
+
+}
+
+
+
+.sidebar nav a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#334155;
+
+    text-decoration:none;
+
+    padding:14px 18px;
+
+    margin:8px 0;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+
+
+.sidebar nav a:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
+
+
+.contenedor{
+
+    margin-left:260px;
+
+    padding:35px;
+
+    min-height:100vh;
+
+    background:#f1f5f9;
+
+}
+
+
+
+
+/* ========================= */
+/* TITULOS */
+/* ========================= */
+
+
+h1{
+
+    color:#0f172a;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* ========================= */
+/* BOTONES */
+/* ========================= */
+
+
+button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:11px 22px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    margin:3px;
+
+}
+
+
+
+button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+/* ========================= */
+/* TABLAS */
+/* ========================= */
+
+
+table{
+
+    width:100%;
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    border-collapse:collapse;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    margin-top:25px;
+
+}
+
+
+
+thead{
+
+    background:#2563eb;
+
+}
+
+
+
+thead th{
+
+    padding:15px;
+
+    text-align:left;
+
+    color:white !important;
+
+    font-weight:bold;
+
+    font-size:16px;
+
+}
+
+
+
+tbody{
+
+    background:white;
+
+}
+
+
+
+tbody td{
+
+    padding:14px;
+
+    color:#333 !important;
+
+    background:white;
+
+    border-bottom:1px solid #e2e8f0;
+
+    font-size:15px;
+
+}
+
+
+
+tbody tr:hover td{
+
+    background:#f8fafc;
+
+}
+
+
+
+/* ========================= */
+/* COLUMNA DESCRIPCION */
+/* ========================= */
+
+
+td:nth-child(3){
+
+    min-width:250px;
+
+    max-width:350px;
+
+    white-space:normal;
+
+    word-wrap:break-word;
+
+}
+
+
+
+/* ========================= */
+/* ACCIONES */
+/* ========================= */
+
+
+.acciones{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+
+
+.btn-editar{
+
+    background:#16a34a;
+
+}
+
+
+
+.btn-eliminar{
+
+    background:#dc2626;
+
+}
+
+
+
+.btn-editar:hover{
+
+    background:#15803d;
+
+}
+
+
+
+.btn-eliminar:hover{
+
+    background:#b91c1c;
+
+}
+
+
+
+/* ========================= */
+/* FORMULARIOS */
+/* ========================= */
+
+
+form{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    width:450px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:5px;
+
+    font-weight:bold;
+
+    color:#333;
+
+}
+
+
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:8px;
+
+}
+
+
+
+/* ========================= */
+/* TARJETAS */
+/* ========================= */
+
+
+.tarjetas{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.tarjeta{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.tarjeta p{
+
+    font-size:35px;
+
+    font-weight:bold;
+
+    color:#2563eb;
+
+}
+.tabla-productos th,
+.tabla-productos td,
+table th,
+table td{
+
+    color:#000 !important;
+    background:white !important;
+
+}
+
+
+.tabla-productos th,
+table th{
+
+    background:#2563eb !important;
+    color:white !important;
+
+}

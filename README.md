@@ -1,30 +1,31 @@
-# Sistema de Gestión de Inventario
+<# Sistema de Gestión de Inventario
 
 Aplicación web desarrollada en React para administrar
 y controlar productos de inventario.
 
-## Tecnologías
+## Tecnologías utilizadas
 - React
 - JavaScript
 - CSS
 - Vite
 
 ## Funcionalidades
-- Consultar productos.
-- Registrar productos.
-- Editar productos.
-- Eliminar productos.
-- Visualizar información del inventario.
+- Gestión de productos.
+- Gestión de categorías.
+- Gestión de proveedores.
+- Registro de entradas y salidas.
+- Gestión de usuarios.
+- Reportes de inventario.
 
 ## Instalación
 
 npm install
 
-## Ejecutar el proyecto
+## Ejecución
 
 npm run dev
 
-## Generar versión de producción
+## Compilación de producción
 
 npm run build
 

@@ -1,0 +1,703 @@
+.layout{
+
+display:flex;
+min-height:100vh;
+background:#f4f6f9;
+
+}
+
+
+.contenedor{
+
+flex:1;
+padding:35px;
+
+}
+
+
+.dashboard-header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+
+}
+
+
+.dashboard-header h1{
+
+font-size:34px;
+margin:0;
+color:#1f2937;
+
+}
+
+
+.dashboard-header p{
+
+color:#6b7280;
+
+}
+
+
+.usuario-panel{
+
+background:white;
+padding:15px 25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.dashboard-tarjetas{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-bottom:25px;
+
+}
+
+
+.tarjeta{
+
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+.tarjeta h3{
+
+color:#6b7280;
+
+}
+
+
+.tarjeta h2{
+
+font-size:35px;
+margin:10px 0;
+
+}
+
+
+.icono{
+
+font-size:35px;
+
+}
+
+
+.tarjeta span{
+
+color:#6b7280;
+
+}
+
+
+.tarjeta-azul{
+
+border-left:6px solid #2563eb;
+
+}
+
+
+.tarjeta-verde{
+
+border-left:6px solid #16a34a;
+
+}
+
+
+.tarjeta-morada{
+
+border-left:6px solid #9333ea;
+
+}
+
+
+.tarjeta-roja{
+
+border-left:6px solid #dc2626;
+
+}
+
+
+.panel{
+
+background:white;
+padding:25px;
+border-radius:18px;
+margin-bottom:25px;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+
+th{
+
+background:#f3f4f6;
+padding:14px;
+text-align:left;
+
+}
+
+
+td{
+
+padding:14px;
+border-bottom:1px solid #eee;
+
+}
+
+
+.segunda .tarjeta{
+
+text-align:center;
+
+}
+
+
+@media(max-width:1000px){
+
+.dashboard-tarjetas{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+/* Panel del ranking de productos más vendidos */
+.panel-mas-vendidos {
+    margin-top: 24px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05);
+}
+
+/* Descripción del ranking */
+.descripcion-ranking {
+    margin: 8px 0 18px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Contenedor adaptable para pantallas pequeñas */
+.tabla-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Presentación de la tabla de productos más vendidos */
+.panel-mas-vendidos table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+/* Celdas de encabezado y contenido */
+.panel-mas-vendidos th,
+.panel-mas-vendidos td {
+    padding: 13px 15px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    color: #334155;
+    white-space: nowrap;
+}
+
+/* Encabezado con fondo claro */
+.panel-mas-vendidos th {
+    background: #f1f5f9;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* Efecto suave al pasar el cursor por una fila */
+.panel-mas-vendidos tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Mensajes de carga o ausencia de resultados */
+.mensaje-vacio {
+    padding: 18px 0;
+    color: #64748b;
+}
+
+/* Tarjeta profesional de stock disponible */
+.tarjeta-stock-profesional {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+/* Encabezado de la tarjeta */
+.stock-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+/* Icono discreto */
+.stock-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background: #edf2f8;
+    border-radius: 12px;
+    font-size: 23px;
+}
+
+/* Título y descripción */
+.stock-titulo {
+    flex: 1;
+    min-width: 0;
+}
+
+.stock-titulo h3 {
+    margin: 0 0 5px;
+    color: #1e293b;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.stock-titulo p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Total de unidades */
+.stock-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.stock-total span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.stock-total strong {
+    color: #294d73;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+/* Permitir desplazamiento si existen muchos productos */
+.stock-tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Tabla de existencias */
+.stock-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+/* Encabezados de tabla */
+.stock-tabla thead th {
+    padding: 13px 16px;
+    background: #f5f7fa;
+    color: #475569;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* Filas de productos */
+.stock-tabla tbody td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #edf0f4;
+    color: #334155;
+    font-size: 14px;
+}
+
+/* Última fila sin borde inferior */
+.stock-tabla tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Nombre del producto */
+.stock-nombre-producto {
+    font-weight: 600;
+    color: #29384a;
+}
+
+/* Alinear cantidades a la derecha */
+.stock-columna-cantidad {
+    text-align: right !important;
+    white-space: nowrap;
+}
+
+/* Cantidad disponible */
+.stock-cantidad {
+    color: #245b43;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Texto de unidades */
+.stock-unidad {
+    margin-left: 6px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* Mensaje cuando no hay productos */
+.stock-sin-datos {
+    padding: 24px !important;
+    text-align: center;
+    color: #64748b !important;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 600px) {
+    .tarjeta-stock-profesional {
+        padding: 16px;
+    }
+
+    .stock-encabezado {
+        flex-wrap: wrap;
+    }
+
+    .stock-total {
+        margin-left: auto;
+    }
+
+    .stock-total strong {
+        font-size: 24px;
+    }
+
+    .stock-tabla thead th,
+    .stock-tabla tbody td {
+        padding: 12px 10px;
+    }
+}
+
+/* =========================================
+   GRÁFICAS INTERACTIVAS DEL DASHBOARD
+   Agregar al final de Dashboard.css
+========================================= */
+.panel-graficas {
+    margin: 22px 0;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e6eaf0;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(31, 41, 55, 0.045);
+}
+
+.graficas-titulo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.graficas-titulo h2 {
+    margin: 0 0 7px;
+    color: #1f2937;
+    font-size: 21px;
+}
+
+.graficas-titulo p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.graficas-en-vivo {
+    flex-shrink: 0;
+    padding: 7px 11px;
+    border-radius: 999px;
+    background: #ecfdf5;
+    color: #047857;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.graficas-controles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.grafica-tab {
+    border: 1px solid #d8dee8;
+    border-radius: 9px;
+    background: #fff;
+    color: #475569;
+    padding: 10px 15px;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+
+.grafica-tab:hover {
+    background: #f5f8fc;
+    border-color: #9aabc0;
+}
+
+.grafica-tab.activa {
+    color: #fff;
+    background: #245b92;
+    border-color: #245b92;
+}
+
+.grafica-tab:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+.grafica-contenido {
+    min-height: 210px;
+}
+
+.grafica-resumen {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.grafica-resumen > div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 15px 17px;
+    border: 1px solid #e8edf3;
+    border-radius: 11px;
+    background: #fafcff;
+}
+
+.grafica-resumen span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.grafica-resumen strong {
+    color: #1e293b;
+    font-size: 25px;
+    font-variant-numeric: tabular-nums;
+}
+
+.grafica-barras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 4px 0;
+}
+
+.grafica-barra-fila {
+    min-width: 0;
+}
+
+.grafica-barra-etiqueta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    color: #475569;
+    font-size: 13px;
+}
+
+.grafica-barra-etiqueta span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.grafica-barra-etiqueta strong {
+    color: #1f2937;
+    font-variant-numeric: tabular-nums;
+}
+
+.grafica-barra-fondo {
+    width: 100%;
+    height: 17px;
+    overflow: hidden;
+    background: #eef2f7;
+    border-radius: 999px;
+}
+
+.grafica-barra-valor {
+    height: 100%;
+    min-width: 0;
+    border-radius: 999px;
+    transition: width .5s ease;
+}
+
+.barra-entrada {
+    background: linear-gradient(90deg, #367fc1, #65a7e2);
+}
+
+.barra-salida {
+    background: linear-gradient(90deg, #e19a38, #f3c66d);
+}
+
+.barra-stock {
+    background: linear-gradient(90deg, #278c72, #67c5a5);
+}
+
+.grafica-nota {
+    margin: 20px 0 0;
+    color: #7b8797;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.grafica-estado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(24px, 7vw, 90px);
+    padding: 8px 0;
+}
+
+.estado-circulo {
+    display: grid;
+    width: 210px;
+    height: 210px;
+    flex: 0 0 210px;
+    place-items: center;
+    border-radius: 50%;
+    background: conic-gradient(
+        #299a76 0% var(--porcentaje-disponible, 100%),
+        #e8a23c var(--porcentaje-disponible, 100%) var(--porcentaje-bajo, 100%),
+        #df5c5c var(--porcentaje-bajo, 100%) 100%
+    );
+    position: relative;
+}
+
+/* Segmentos visuales según la proporción real calculada por el componente. */
+.estado-circulo::before {
+    content: "";
+    position: absolute;
+    inset: 22px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.estado-circulo-centro {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.estado-circulo-centro strong {
+    color: #1e293b;
+    font-size: 30px;
+}
+
+.estado-circulo-centro span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.estado-leyenda {
+    width: min(100%, 390px);
+}
+
+.estado-leyenda-item {
+    display: grid;
+    grid-template-columns: 12px minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #edf0f4;
+    color: #475569;
+    font-size: 13px;
+}
+
+.estado-leyenda-item strong {
+    color: #1f2937;
+}
+
+.estado-leyenda-item small {
+    min-width: 42px;
+    color: #7b8797;
+    text-align: right;
+}
+
+.estado-punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.estado-agotado { background: #df5c5c; }
+.estado-bajo { background: #e8a23c; }
+.estado-disponible { background: #299a76; }
+
+@media (max-width: 760px) {
+    .panel-graficas {
+        padding: 16px;
+    }
+
+    .graficas-titulo {
+        flex-direction: column;
+    }
+
+    .graficas-controles {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grafica-tab {
+        width: 100%;
+        text-align: left;
+    }
+
+    .grafica-estado {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .grafica-resumen {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+}
+

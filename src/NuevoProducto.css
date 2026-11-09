@@ -1,0 +1,78 @@
+.formulario-producto{
+
+    width:100%;
+    max-width:700px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+
+}
+
+
+.formulario-producto label{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+
+.formulario-producto input,
+.formulario-producto textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:17px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+
+.formulario-producto textarea{
+
+    min-height:130px;
+
+}
+
+
+.formulario-producto button{
+
+    padding:15px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+
+.formulario-producto button:hover{
+
+    background:#1d4ed8;
+
+}

@@ -1,0 +1,110 @@
+.contenedor{
+
+    padding:30px;
+
+}
+
+
+
+.formulario-entrada{
+
+    width:600px;
+
+    max-width:100%;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.formulario-entrada label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+
+
+.formulario-entrada input,
+.formulario-entrada select,
+.formulario-entrada textarea{
+
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #ddd;
+
+
+}
+
+
+
+.formulario-entrada textarea{
+
+    height:100px;
+
+}
+
+
+
+.formulario-entrada button,
+.crear-producto button{
+
+
+    margin-top:20px;
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+.crear-producto{
+
+
+    margin-top:30px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    width:600px;
+
+    max-width:100%;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}

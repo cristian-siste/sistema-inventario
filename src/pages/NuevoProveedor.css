@@ -1,0 +1,114 @@
+/* ========================= */
+/* NUEVO PROVEEDOR */
+/* ========================= */
+
+.formulario-proveedor{
+
+    width:100%;
+    max-width:650px;
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+
+}
+
+
+
+.formulario-proveedor label{
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    color:#333;
+
+}
+
+
+
+.formulario-proveedor input,
+.formulario-proveedor textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:16px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:8px;
+
+    box-sizing:border-box;
+
+    transition:.3s;
+
+}
+
+
+
+.formulario-proveedor input:focus,
+.formulario-proveedor textarea:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 5px rgba(37,99,235,.3);
+
+}
+
+
+
+.formulario-proveedor textarea{
+
+    min-height:130px;
+
+    resize:vertical;
+
+}
+
+
+
+.formulario-proveedor button{
+
+    margin-top:10px;
+
+    padding:15px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.formulario-proveedor button:hover{
+
+    background:#1d4ed8;
+
+}

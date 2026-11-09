@@ -1,0 +1,498 @@
+/* ========================= */
+/* CONFIGURACIÓN GENERAL */
+/* ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
+
+body{
+
+    background:#f4f6f9;
+    color:#333;
+}
+
+
+#root{
+
+    min-height:100vh;
+
+}
+
+
+
+/* ========================= */
+/* ESTRUCTURA PRINCIPAL */
+/* ========================= */
+
+
+.layout{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+
+
+/* ========================= */
+/* CONTENIDO DE LAS PÁGINAS */
+/* ========================= */
+
+
+.contenedor{
+
+    flex:1;
+    margin-left:260px;
+    padding:35px;
+    background:#f4f6f9;
+
+}
+
+
+
+/* ========================= */
+/* TITULOS */
+/* ========================= */
+
+
+h1{
+
+    color:#1e293b;
+    font-size:32px;
+    margin-bottom:25px;
+
+}
+
+
+h2{
+
+    color:#1e293b;
+
+}
+
+
+
+/* ========================= */
+/* SIDEBAR CLARO */
+/* ========================= */
+
+
+.sidebar{
+
+    width:260px;
+    height:100vh;
+    background:white;
+    color:#333;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:25px 15px;
+    border-right:1px solid #ddd;
+    box-shadow:2px 0 10px rgba(0,0,0,0.05);
+
+}
+
+
+
+.sidebar h2{
+
+    text-align:center;
+    color:#1e293b;
+    margin-bottom:35px;
+
+}
+
+
+
+.sidebar nav a{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:#334155;
+    text-decoration:none;
+
+    padding:14px;
+    margin:8px 0;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+
+
+.sidebar nav a:hover{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+
+
+/* ========================= */
+/* TABLAS GENERALES */
+/* ========================= */
+
+
+table{
+
+    width:100%;
+    background:white;
+    border-collapse:collapse;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+th{
+
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    text-align:left;
+
+}
+
+
+
+td{
+
+    padding:14px;
+    border-bottom:1px solid #ddd;
+    color:#333;
+
+}
+
+
+
+tr:hover{
+
+    background:#f8fafc;
+
+}
+
+
+
+/* ========================= */
+/* FORMULARIOS */
+/* ========================= */
+
+
+form{
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    width:450px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+label{
+
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#333;
+
+}
+
+
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:12px;
+
+    border:1px solid #ccc;
+    border-radius:8px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* ========================= */
+/* BOTONES */
+/* ========================= */
+
+
+button{
+
+    background:#2563eb;
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+/* ========================= */
+/* TARJETAS */
+/* ========================= */
+
+
+.tarjetas{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.tarjeta{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+
+@media(max-width:768px){
+
+    .layout{
+
+        flex-direction:column;
+
+    }
+
+
+    .sidebar{
+
+        position:relative;
+        width:100%;
+        height:auto;
+
+    }
+
+
+    .contenedor{
+
+        margin-left:0;
+
+    }
+
+}
+/* ========================= */
+/* BARRA SUPERIOR */
+/* ========================= */
+
+
+.barra-superior{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgb(171, 177, 190);
+
+    padding:20px 25px;
+
+    border-radius:15px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+.barra-superior h1{
+
+    margin:0;
+
+    font-size:28px;
+
+    color:#345ea1;
+
+}
+/* ========================= */
+/* TABLAS - TEXTO VISIBLE */
+/* ========================= */
+
+
+table{
+
+    width:100%;
+    background:white;
+    border-collapse:collapse;
+    margin-top:25px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+thead{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+
+thead th{
+
+    padding:15px;
+    font-size:16px;
+    text-align:left;
+
+}
+
+
+tbody td{
+
+    padding:14px;
+    color:#333;
+    background:white;
+    border-bottom:1px solid #ddd;
+    font-size:15px;
+
+}
+
+
+tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+
+/* BOTONES DENTRO DE TABLAS */
+
+.acciones{
+
+    display:flex;
+    gap:10px;
+
+}
+
+
+.btn-editar{
+
+    background:#16a34a;
+    color:white;
+
+}
+
+
+.btn-eliminar{
+
+    background:#dc2626;
+    color:white;
+
+}
+
+
+.btn-editar:hover{
+
+    background:#15803d;
+
+}
+
+
+.btn-eliminar:hover{
+
+    background:#b91c1c;
+
+}
+
+.boton-nuevo{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+.boton-nuevo:hover{
+
+    background:#1d4ed8;
+
+}
+.tabla-productos th,
+.tabla-productos td,
+table th,
+table td{
+
+    color:#000 !important;
+    background:white !important;
+
+}
+
+
+.tabla-productos th,
+table th{
+
+    background:#2563eb !important;
+    color:white !important;
+
+}
+table th{
+
+    background:#1e3a8a !important;
+    color:white !important;
+    text-align:left;
+    padding:15px;
+
+}

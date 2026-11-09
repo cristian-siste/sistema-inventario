@@ -1,0 +1,228 @@
+
+/* ========================================
+   PAGINA DE PRODUCTOS
+======================================== */
+
+.contenedor {
+    width: 100%;
+    padding: 30px;
+    background: #f4f6f9;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #1f2937;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ========================================
+   ENCABEZADO
+======================================== */
+
+.header-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.header-pagina h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* ========================================
+   BOTON NUEVO PRODUCTO
+======================================== */
+
+.header-pagina .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background: #1e293b;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #1e293b;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 7px rgba(15, 23, 42, 0.12);
+    transition: background 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.header-pagina .btn::before {
+    content: "+";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.header-pagina .btn:hover {
+    background: #334155;
+    border-color: #334155;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(15, 23, 42, 0.16);
+}
+
+/* ========================================
+   CONTENEDOR DE LA TABLA
+======================================== */
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+/* ========================================
+   TABLA DE PRODUCTOS
+======================================== */
+
+.tabla-contenedor table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.tabla-contenedor th {
+    padding: 16px 14px;
+    background: #e9eef5;
+    color: #334155;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    border-bottom: 1px solid #dbe2ea;
+}
+
+.tabla-contenedor td {
+    padding: 15px 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #475569;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.tabla-contenedor tbody tr:nth-child(even) {
+    background: #fafbfd;
+}
+
+.tabla-contenedor tbody tr:hover {
+    background: #f1f5f9;
+}
+
+.tabla-contenedor tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ========================================
+   BOTONES DE ACCIONES
+======================================== */
+
+.btn-editar,
+.btn-eliminar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 13px;
+    margin: 3px;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+}
+
+/* BOTON EDITAR */
+
+.btn-editar {
+    background: #e8f1ff;
+    color: #2457a7;
+    border: 1px solid #d4e3ff;
+}
+
+.btn-editar::before {
+    content: "✎";
+    font-size: 15px;
+}
+
+.btn-editar:hover {
+    background: #d7e7ff;
+    color: #17458f;
+    transform: translateY(-1px);
+}
+
+/* BOTON ELIMINAR */
+
+.btn-eliminar {
+    background: #fff0f0;
+    color: #b42332;
+    border: 1px solid #f8d7da;
+}
+
+.btn-eliminar::before {
+    content: "✕";
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn-eliminar:hover {
+    background: #ffe0e0;
+    color: #921c28;
+    transform: translateY(-1px);
+}
+
+/* ========================================
+   MENSAJES Y ESTADOS
+======================================== */
+
+.tabla-contenedor td[colspan] {
+    padding: 28px;
+    color: #64748b;
+    text-align: center;
+}
+
+/* ========================================
+   DISEÑO RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 18px;
+    }
+
+    .header-pagina {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .header-pagina h1 {
+        font-size: 27px;
+    }
+
+    .header-pagina .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tabla-contenedor table {
+        min-width: 900px;
+    }
+}
